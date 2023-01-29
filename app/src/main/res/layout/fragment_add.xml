@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.add.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-89dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/ArchiveB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="Archive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/GetBinB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="GetBin"
+        app:layout_constraintBottom_toTopOf="@+id/ArchiveB"
+        app:layout_constraintEnd_toEndOf="@+id/ArchiveB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ArchiveB" />
+
+    <EditText
+        android:id="@+id/Bin_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Your (BIN/IIN)"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/GetBinB"
+        app:layout_constraintEnd_toEndOf="@+id/GetBinB"
+        app:layout_constraintStart_toStartOf="@+id/GetBinB" />
+
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/for_example_textView"
+        app:layout_constraintEnd_toEndOf="@+id/for_example_textView"
+        app:layout_constraintStart_toStartOf="@+id/for_example_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/for_example_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="for example: 4571732 or 45717360"
+        app:layout_constraintBottom_toTopOf="@+id/Bin_editText"
+        app:layout_constraintEnd_toEndOf="@+id/Bin_editText"
+        app:layout_constraintStart_toStartOf="@+id/Bin_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
